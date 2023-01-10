@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<h1> Programa Calcular Puntos Futbol</h1>
+
+<script>
+	function saltarlinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function imprimir(mensaje){
+
+		document.write(mensaje);
+		saltarlinea();
+
+	}
+
+	var victorias = prompt("¿cuántas victorias?");
+	var empates = prompt("¿cuántos empates?")
+
+	var puntos_total = parseInt(victorias) * 3 + parseInt(empates)
+
+	imprimir("El total de puntos es: " + puntos_total);
+//Tambien puedo poner el parseInt() en el prompt(), e.d, parseInt(prompt()). Queda mas directo.
+
+	var puntos_antes = parseInt(prompt("Ingrese los puntos de la temporada pasada"))
+
+	if (puntos_total > puntos_antes){
+
+		imprimir("El equipo está mejor que el año pasado");
+
+	}	
+	else if(puntos_total < puntos_antes){
+
+		imprimir("El equipo está peor que el año pasado");	
+	}
+	else{
+
+		imprimir("El equipo está igual que el año pasado");
+	}
+	
+
+	//
+
+
+</script>

@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h1> Mundiales de la FIFA</h1>
+
+<script>
+	function saltarlinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function imprimir(mensaje){
+
+		document.write(mensaje);
+		saltarlinea();
+	}
+
+	var año_mundial = 1930;
+	var limite_mundiales = parseInt(prompt("Ingrese el año limite para el calculo"))
+
+	//alert("Hubo mundial de la fifa en el año: " + año_mundial);
+
+	while(año_mundial <= limite_mundiales){
+
+	imprimir("Hubo mundial de la fifa en el año: " + año_mundial);	
+	año_mundial = año_mundial + 4;
+	
+	}
+
+	imprimir("Espere otros largos 4 años para el mundial.");
+
+
+</script>

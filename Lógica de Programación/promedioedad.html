@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<h1> Media de las edades </h1>
+
+<script>
+	function saltarlinea(){
+
+		document.write("<br>");
+		//document.write("<br>");
+
+	}
+
+	function imprimir(mensaje){
+
+		document.write(mensaje);
+		saltarlinea();
+	}
+
+	var cantidad = parseInt(prompt("Ingrese la miembros de la familia"));
+	var contador = 1;
+	var total_edad = 0; 
+
+	while(contador <= cantidad){
+		
+		edades = parseInt(prompt("Ingrese la edad"));
+		total_edad = total_edad + edades;		
+		contador++;
+		
+	}
+
+	var prom = total_edad / cantidad;
+	imprimir("El promedio de edad es: " + prom)
+
+	
+
+
+</script>
