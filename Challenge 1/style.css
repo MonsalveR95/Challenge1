@@ -8,3 +8,11 @@ body{
     width: 120px;    
 }
 
+.titulo{
+    color: #0a3871;
+    width: 577px;
+    height: 48px;
+    position: absolute;
+    left: 240px;
+    top: 168px;    
+}
