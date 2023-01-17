@@ -16,3 +16,38 @@ body{
     left: 240px;
     top: 168px;    
 }
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.encriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #0A3871;
+    color: #FFFFFF;
+    border-radius: 15px;
+    width: 328px;
+    height: 67px;
+}
+
+.desencriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    width: 328px;
+    height: 67px;
+}
+
