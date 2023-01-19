@@ -48,6 +48,55 @@ body{
     margin-right: 32px;
 }
 
+.textos{
+    position: absolute;
+    top: 619px;
+    width: 336px;
+    height: 122px;
+    margin: 32px;
+    text-align: center;
+    
+}
+
+.ningun{    
+    height: 58px;    
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.ingrese{
+    height: 48px;    
+    font-size: 16px;
+    color: #495057;
+}
+
+.adv{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 200px;
+    top: 745px;
+    align-items: center;
+    padding: 0px;
+}
+
+.advertencia{
+    text-align: center;
+    font-size: 12px;
+    color: #495057;
+    width: 205px;
+    height: 18px;
+    line-height: 150%;
+}
+
+.advertencia:before{
+     content: "\26A0";
+}
+
 .botones{
     display: flex;
     flex-direction: row;
