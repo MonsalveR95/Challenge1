@@ -48,6 +48,12 @@ body{
     margin-right: 32px;
 }
 
+.mensaje{
+    position: absolute;
+    background: #FFFFFF;
+    border: none;
+}
+
 .textos{
     position: absolute;
     top: 619px;
