@@ -24,3 +24,24 @@ function encriptar(valor) {
     return letter_encripted.join('') // aienterj
 }
 
+const clave = {
+    ai: "a",
+    enter: "e",
+    imes: "i",
+    ober: "o",
+    uaft: "u"
+}
+
+function btnDesencriptar(){
+    const textoDesencriptado = desencriptar(texto.value);
+    mensaje.value = textoDesencriptado;
+}
+
+function desencriptar(valor){
+    const palabras = valor.split(/(\d)/)
+    const letraDesencrip = palabras.map(letra => {
+        const desen = clave[letra] ?? letra
+        return desen
+    })
+    return letraDesencrip.join('')
+}
