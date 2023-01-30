@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<h1> Juego de Adivinanza</h1>
+
+<script>
+	function saltarlinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function imprimir(mensaje){
+
+		document.write(mensaje);
+		saltarlinea();
+
+	}
+
+	function sorteo(n){
+		return Math.floor(Math.random() * n)
+	}
+	var numero_Pensado = sorteo(10);
+	var numero_Lanzado = parseInt(prompt("Diga un numero"));
+
+	if (numero_Pensado == numero_Lanzado){
+		imprimir("Ud acertó el número.");
+	}
+	else{
+		if (numero_Pensado < numero_Lanzado){
+			imprimir("Falló, su numero era: " + numero_Lanzado + " y este es mayor que el numero pensando que era: " + numero_Pensado);
+		}
+		else{
+			imprimir("Falló, su numero era: " + numero_Lanzado + " y este es menor que el numero pensando que era: " + numero_Pensado);
+		}	
+	}
+
+
+</script>
