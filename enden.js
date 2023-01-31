@@ -13,6 +13,7 @@ const json = {
 function btnEncriptar(){
     const textoEncriptado = encriptar(texto.value)
     mensaje.value = textoEncriptado
+    texto.value = ""    
 }
 
 function encriptar(valor) {
@@ -35,6 +36,7 @@ const clave = {
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(texto.value);
     mensaje.value = textoDesencriptado;
+    texto.value = "" 
 }
 
 function desencriptar(valor){
@@ -45,3 +47,4 @@ function desencriptar(valor){
     })
     return letraDesencrip.join('')
 }
+
