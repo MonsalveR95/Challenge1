@@ -39,12 +39,17 @@ function btnDesencriptar(){
     texto.value = "" 
 }
 
-function desencriptar(valor){
-    const palabras = valor.split(/(\d)/)
-    const letraDesencrip = palabras.map(letra => {
-        const desen = clave[letra] ?? letra
-        return desen
-    })
-    return letraDesencrip.join('')
+function desencriptar(valor1){
+    for(i = 0; i <= texto.length; i++){
+        if(valor1.includes(Object.keys(clave))){
+            valor1 = valor1.replaceAll()
+        }
+    }
 }
 
+//const palabras = valor.split(/(\d)/)
+//const letraDesencrip = palabras.map(letra => {
+//    const desen = clave[letra] ?? letra
+//    return desen
+//})
+//return letraDesencrip.join('')
